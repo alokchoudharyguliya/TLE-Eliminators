@@ -1,0 +1,1 @@
+{"name":"Local: ComparisonString","url":"d:\\Codeforces\\TLE-Eliminators\\ComparisonString.cpp","tests":[{"id":1733170849294,"input":"6\n4\n<<>>\n4\n>><<\n5\n>>>>>\n7\n<><><><\n8\n><>>><<>\n6\n<>>><>","output":"3\n3\n6\n2\n4\n4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Codeforces\\TLE-Eliminators\\ComparisonString.cpp","group":"local","local":true}

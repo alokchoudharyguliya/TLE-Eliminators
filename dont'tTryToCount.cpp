@@ -17,17 +17,14 @@ int main()
     fio;
     int t;
     cin >> t;
+    int ans;
     while (t--)
-    {
+    {   
         int n;
-        cin >> n;
-            if ((n - 1) % 3 == 0 || (n + 1) % 3 == 0)
-            {
-                cout<<"First"<<"\n";
-            }
-            else{
-                cout<<"Second"<<"\n";
-            }
+        int m;
+        cin>>n>>m;
+        string 
+
     }
     return 0;
 }

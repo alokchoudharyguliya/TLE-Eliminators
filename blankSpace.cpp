@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 #define fio                       \
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
@@ -21,13 +20,22 @@ int main()
     {
         int n;
         cin >> n;
-            if ((n - 1) % 3 == 0 || (n + 1) % 3 == 0)
+        int arr[n];
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        int prev = 0, glMax = 0;
+        for (int i = 0; i < n; i++)
+        {
+            if (arr[i] == 0)
             {
-                cout<<"First"<<"\n";
+                glMax = max(glMax, ++prev);
             }
-            else{
-                cout<<"Second"<<"\n";
-            }
+            else
+                prev = 0;
+        }
+        cout << glMax << endl;
     }
     return 0;
 }

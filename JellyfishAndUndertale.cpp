@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 #define fio                       \
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
@@ -19,15 +18,20 @@ int main()
     cin >> t;
     while (t--)
     {
-        int n;
-        cin >> n;
-            if ((n - 1) % 3 == 0 || (n + 1) % 3 == 0)
-            {
-                cout<<"First"<<"\n";
-            }
-            else{
-                cout<<"Second"<<"\n";
-            }
+        int a, b, n;
+        cin >> a >> b >> n;
+        vector<int> arr(n);
+        for (int i = 0; i < n; i++)
+            cin >> arr[i];
+        int cnt=b;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]>a)
+                cnt+=a-1;
+            else
+                cnt+=arr[i]-1;
+        }
+        cout <<cnt<< endl;
     }
     return 0;
 }

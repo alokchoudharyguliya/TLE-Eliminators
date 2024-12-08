@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 #define fio                       \
     ios_base::sync_with_stdio(0); \
     cin.tie(0);                   \
@@ -12,22 +11,24 @@ const ll mod = 1e9 + 7;
 const ll N = 2e5 + 10;
 const ll inf = 1e9;
 const ll linf = 1e18;
+
 int main()
 {
-    fio;
     int t;
-    cin >> t;
-    while (t--)
-    {
         int n;
         cin >> n;
-            if ((n - 1) % 3 == 0 || (n + 1) % 3 == 0)
-            {
-                cout<<"First"<<"\n";
-            }
-            else{
-                cout<<"Second"<<"\n";
-            }
-    }
+        int arr[n];
+        int temp;
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
+        temp=abs(arr[0]);
+        for (int i = 0; i < n; i++)
+        {
+            if (temp > abs(arr[i]))
+                temp = abs(arr[i]);
+        }
+        cout << temp;
     return 0;
 }
