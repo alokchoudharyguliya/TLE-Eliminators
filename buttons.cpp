@@ -22,7 +22,6 @@ int main()
         cin>>a>>b>>c;
         c=c%2;
         if(c==1){a+=c;}
-        // cout<<c<<' ';  
         if(a<=b)
             cout<<"Second"<<endl;
         else
