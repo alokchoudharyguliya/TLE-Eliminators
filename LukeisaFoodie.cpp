@@ -24,17 +24,20 @@ int main()
         for(int i=0;i<n;i++)
             cin>>a[i];
         // v will lie in -x+a[i] to x+a[i]
+        int cnt=0;
         vector<pair<int,int>>vRange;
         for(int i=0;i<n;i++)
         vRange.push_back({-x+a[i],x+a[i]});
 
-        for(int i=0;i<n;i++)
+        for(int i=0;i<n-1;i++)
         {
-            cout<<vRange[i].first<<","<<vRange[i].second;
-            cout<<"\n";
+            if(vRange[i].second<vRange[i+1].first)cnt++;
+            // cout<<vRange[i].first<<","<<vRange[i].second;
+            // cout<<"\n";
         }
+        cout<<cnt;
         cout<<"\n";
-        
+
     }
 return 0;
 }
