@@ -1,0 +1,1 @@
+{"name":"Local: MinLCM","url":"c:\\Users\\alok4\\Desktop\\Coding\\Codeforces\\TLE-Eliminators\\MinLCM.cpp","tests":[{"id":1757438512332,"input":"4\n2\n9\n5\n10\n","output":"1 1\n3 6\n1 4\n5 5\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\alok4\\Desktop\\Coding\\Codeforces\\TLE-Eliminators\\MinLCM.cpp","group":"local","local":true}
