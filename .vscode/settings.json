@@ -3,6 +3,10 @@
         "*.embeddedhtml": "html",
         "xiosbase": "cpp",
         "xlocale": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "iostream": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "xutility": "cpp"
     }
 }
